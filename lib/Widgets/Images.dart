@@ -21,7 +21,7 @@ class banner extends StatelessWidget {
           enlargeCenterPage: true,
           isFastScrollingEnabled: false,
           autoPlay: true,
-          autoPlayInterval: Duration(seconds: 4),
+          autoPlayInterval: Duration(seconds: 3),
           autoPlayAnimationDuration: Duration(milliseconds: 800),
           autoPlayCurve: Curves.fastOutSlowIn,
           itemBuilder: (context, index) {

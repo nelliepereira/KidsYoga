@@ -66,7 +66,7 @@ class _FrontScreenState extends State<FrontScreen> {
                           return ListView.builder(
                               shrinkWrap: true,
                               scrollDirection: Axis.horizontal,
-                            //  physics: NeverScrollableScrollPhysics(),
+                              physics: NeverScrollableScrollPhysics(),
                               itemCount: snapshot.data.docs.length,
                               itemBuilder: (context, index){
                                 return
