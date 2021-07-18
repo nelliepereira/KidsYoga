@@ -66,7 +66,7 @@ class _FrontScreenState extends State<FrontScreen> {
                           return ListView.builder(
                               shrinkWrap: true,
                               scrollDirection: Axis.horizontal,
-                              physics: NeverScrollableScrollPhysics(),
+                           //   physics: NeverScrollableScrollPhysics(),
                               itemCount: snapshot.data.docs.length,
                               itemBuilder: (context, index){
                                 return
@@ -116,8 +116,8 @@ class _FrontScreenState extends State<FrontScreen> {
                           List<YogaPosters> posterlist  = snapshot.data.docs.map((e) => YogaPosters.fromJson(e.data())).toList();
                           return GridView.builder(gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: context.isMobile? 2:4),
                                      shrinkWrap: true,
-                             //scrollDirection: Axis.vertical,
-                              //physics: NeverScrollableScrollPhysics(),
+                             scrollDirection: Axis.vertical,
+                              physics: NeverScrollableScrollPhysics(),
                               itemCount: snapshot.data.docs.length,
                               itemBuilder: (context, index){
                                 return
