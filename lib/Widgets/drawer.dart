@@ -94,7 +94,9 @@ class drawermenu extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(8.0, 0, 8.0, 0),
               child: InkWell(
                 splashColor: Colors.lightGreen,
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => Demopg()));
+                },
                 child: Container(
                   height: 40,
                   decoration: BoxDecoration(
